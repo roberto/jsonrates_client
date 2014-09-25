@@ -5,8 +5,8 @@ RSpec.describe Jsonrates::Client do
 
   describe ".historical", :vcr do
     context "successful request" do
-      before do
-        @response = subject.historical(from: "USD", to: "BRL", date: "2014-06-23")
+      let!(:historical) do
+        subject.historical(from: "USD", to: "BRL", date: "2014-06-23")
       end
 
       it "requests /historical using arguments as query parameters" do
@@ -14,7 +14,7 @@ RSpec.describe Jsonrates::Client do
       end
 
       it "returns a hash of rates", :vcr do
-        expect(@response).to eq({"2014-06-23"=>{"utctime"=>"2014-06-23T23:50:03+02:00", "rate"=>"2.22120000"}})
+        expect(historical).to eq({"2014-06-23"=>{"utctime"=>"2014-06-23T23:50:03+02:00", "rate"=>"2.22120000"}})
       end
     end
   end
