@@ -1,6 +1,6 @@
 # JsonratesClient
 
-TODO: Write a gem description
+Client for [jsonrates.com]() written in Ruby.
 
 ## Installation
 
@@ -18,11 +18,12 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    Jsonrates::Client.historical(from: "USD", to: "BRL", date: "2014-06-23")
+    # {"2014-06-23"=>{"utctime"=>"2014-06-23T23:50:03+02:00", "rate"=>"2.22120000"}}
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/jsonrates_client/fork )
+1. Fork it ( https://github.com/roberto/jsonrates_client/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
