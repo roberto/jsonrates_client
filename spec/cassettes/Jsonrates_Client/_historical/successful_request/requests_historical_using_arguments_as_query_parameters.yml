@@ -15,7 +15,7 @@ http_interactions:
       Server:
       - nginx/1.4.6 (Ubuntu)
       Date:
-      - Thu, 25 Sep 2014 03:22:06 GMT
+      - Thu, 25 Sep 2014 03:42:19 GMT
       Content-Type:
       - text/html
       Transfer-Encoding:
@@ -28,5 +28,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"from":"USD","to":"BRL","rates":{"2014-06-23":{"utctime":"2014-06-23T23:50:03+02:00","rate":"2.22120000"}}}'
     http_version: 
-  recorded_at: Thu, 25 Sep 2014 03:22:06 GMT
+  recorded_at: Thu, 25 Sep 2014 03:42:19 GMT
 recorded_with: VCR 2.9.3

@@ -9,7 +9,7 @@ RSpec.describe Jsonrates::Client do
         subject.historical(from: "USD", to: "BRL", date: "2014-06-23")
       end
 
-      it "requests /historical using arguments as query parameters" do
+      it "requests historical using arguments as query parameters" do
         expect(a_request(:get, "http://jsonrates.com/historical?from=USD&to=BRL&date=2014-06-23")).to have_been_made
       end
 
