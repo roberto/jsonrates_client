@@ -1,6 +1,11 @@
 # JsonratesClient
 
-Client for [jsonrates.com]() written in Ruby.
+Client for [jsonrates.com](http://jsonrates.com/) written in Ruby.
+
+## Usage
+
+    Jsonrates::Client.historical(from: "USD", to: "BRL", date: "2014-06-23")
+    # {"2014-06-23"=>{"utctime"=>"2014-06-23T23:50:03+02:00", "rate"=>"2.22120000"}}
 
 ## Installation
 
@@ -15,11 +20,6 @@ And then execute:
 Or install it yourself as:
 
     $ gem install jsonrates_client
-
-## Usage
-
-    Jsonrates::Client.historical(from: "USD", to: "BRL", date: "2014-06-23")
-    # {"2014-06-23"=>{"utctime"=>"2014-06-23T23:50:03+02:00", "rate"=>"2.22120000"}}
 
 ## Contributing
 
